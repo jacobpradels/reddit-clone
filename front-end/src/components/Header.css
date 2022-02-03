@@ -1,0 +1,90 @@
+:root {
+    --blue-accent : #0178D2;
+    --blue-accent-lighter : #4290cc;
+    --cream : #FFFFFF;
+    --background-light: #DBDFE8;
+    --red-accent: #FF4500;
+    --light-accent: #F6F7F9;
+    --button-border-radius: 15px;
+    --button-font-size: 14px;
+    --button-height: 30px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+
+
+.header-bar {
+    display: grid;
+    grid-template-columns: 1fr 8fr .7fr .7fr .25fr .3fr;
+    text-align: center;
+    align-items: center;
+    background-color: var(--cream);
+    margin-bottom: 0;
+    
+}
+
+.header-bar .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+}
+
+.header-bar .circle {
+    border-radius: 50%;
+    background-color: var(--red-accent);
+    width: 24px;
+    height: 24px;
+}
+
+.header-bar .logo-text {
+    font-size: 18px;
+    user-select: none;
+}
+
+.header-bar .search-bar {
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--light-accent);
+    height: 70%;
+    border-radius: 5px;
+    padding: .05rem 1rem;
+}
+
+.header-bar .login {
+    color: var(--blue-accent);
+    margin: .15rem .5rem;
+    border: 1px solid var(--blue-accent);
+    border-radius: var(--button-border-radius);
+    font-size: var(--button-font-size);
+    line-height: var(--button-height);
+    text-align: center;
+    user-select: none;
+}
+
+.header-bar .signup {
+    color: white;
+    background-color: var(--blue-accent);
+    border: 1px solid var(--blue-accent);
+    margin: .15rem .5rem;
+    border-radius: var(--button-border-radius);
+    font-size: var(--button-font-size);
+    line-height: var(--button-height);
+    text-align: center;
+    user-select: none;
+}
+
+.header-bar .signup:hover {
+    background-color: var(--blue-accent-lighter);
+}
+
+.header-bar .login:hover {
+    background-color: var(--light-accent);
+}
+
