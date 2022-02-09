@@ -1,0 +1,59 @@
+
+:root {
+    --width: 15rem;
+    --height: 12rem;
+    --blue-accent : #0178D2;
+    --cream : #FFFFFF;
+    --background-light: #DBDFE8;
+    --red-accent: #FF4500;
+    --light-accent: #F6F7F9;
+}
+
+.nav-bar {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.popular-posts {
+}
+.navbar-btn {
+    border: none;
+    border-radius: 50px;
+}
+
+.nav-buttons {
+    height: 3.5rem;
+    background-color: var(--cream);
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    filter: drop-shadow(0 0 0.05rem gray)
+
+}
+/* Parent class */
+.navbar-btn {
+    width: 85%;
+    height: 65%;
+    font-weight: bold;
+    background-color: var(--light-accent);
+}
+/* Individual button classes */
+
+.hot-btn {
+    color: var(--blue-accent);
+}
+
+.everywhere-btn {
+    color: var(--blue-accent);
+}
+
+.new-btn, .top-btn, .elipsis-btn {
+    color: gray;
+}
+
+.display-btn {
+    width: 25%;
+    justify-self: flex-end;
+    font-size: 18px;
+}

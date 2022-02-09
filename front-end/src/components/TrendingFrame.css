@@ -1,6 +1,11 @@
 :root {
     --width: 15rem;
     --height: 12rem;
+    --blue-accent : #0178D2;
+    --cream : #FFFFFF;
+    --background-light: #DBDFE8;
+    --red-accent: #FF4500;
+    --light-accent: #F6F7F9;
 }
 
 .trending-frame {
@@ -12,7 +17,7 @@
     flex-direction: column;
     justify-content: end;
     border-radius: 10px;
-    margin: 2rem .5rem;
+    margin: .5rem .5rem;
 }
 
 
@@ -63,6 +68,7 @@
 .trending-panel {
     width: 69rem;
     margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -71,12 +77,14 @@
 .trending-panel-title {
     width: 25%;
     margin-left: 3rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 0;
+    font-stretch: extra-condensed;
+    font-size: 14px;
 }
 
 .trending-panel-frames {
-    margin-top: 0;
+    margin-top: none;
     padding: 0;
     display:flex;
     flex-direction: row;

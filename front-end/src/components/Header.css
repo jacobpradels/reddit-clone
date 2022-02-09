@@ -25,6 +25,7 @@ body, html {
     align-items: center;
     background-color: var(--cream);
     margin-bottom: 0;
+    max-height: 4rem;
     
 }
 
@@ -45,16 +46,20 @@ body, html {
 .header-bar .logo-text {
     font-size: 18px;
     user-select: none;
+    max-height: 4rem;
 }
 
 .header-bar .search-bar {
-    width: 50%;
+    min-width: 70%;
     margin: 0 auto;
     border: none;
     background-color: var(--light-accent);
     height: 70%;
     border-radius: 5px;
     padding: .05rem 1rem;
+    max-height: 2rem;
+
+
 }
 
 .header-bar .login {
@@ -66,6 +71,8 @@ body, html {
     line-height: var(--button-height);
     text-align: center;
     user-select: none;
+    max-height: 2rem;
+    min-width: 4rem;
 }
 
 .header-bar .signup {
@@ -78,6 +85,8 @@ body, html {
     line-height: var(--button-height);
     text-align: center;
     user-select: none;
+    max-height: 2rem;
+    min-width: 4rem;
 }
 
 .header-bar .signup:hover {
@@ -88,3 +97,6 @@ body, html {
     background-color: var(--light-accent);
 }
 
+.personal-data {
+    min-width: 3rem;
+}
